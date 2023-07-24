@@ -1,13 +1,10 @@
-import { useState } from "react";
+import React from "react";
+import { TextInput } from "./lib";
 
 function App() {
-  const [value, setvalue] = useState("");
   return (
     <div className="App">
-      <input type="text" value={value} />
-      <button type="button" onClick={() => setvalue("Value Changed")}>
-        Change value
-      </button>
+      <TextInput />
     </div>
   );
 }
